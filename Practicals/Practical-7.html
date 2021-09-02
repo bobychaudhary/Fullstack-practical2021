@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-size: 38px;
+            text-align: center;
+            padding: 25px 0px;
+        }
+        #Header{
+            background-color: gray;
+            height: 100px;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            color: white;
+        }
+        #Banner{
+            background-color: rgb(109, 163, 212);
+            height: 700px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-size: 35px;
+            color: white;
+        }
+        #Section-1{
+            font-weight: bold;
+            padding: 20px;
+            height: 60px;
+            justify-content: center;
+            display: flex;
+            font-size: 35px;
+            color: black;
+        }
+        #circle-container{
+           width: 100%;
+            margin: 15px auto;
+        }
+        #circle-container::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .Circle{
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            background-color: goldenrod;
+            float: left;
+            margin-left: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        #sec2-container {
+   
+      }
+      #sec2-container::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+        #left-side{
+            height: 500px;
+            width: 50%;
+            background-color: gray;
+            display: flex;
+            float: left;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 30px;
+        }
+        #right-side{
+            width: 48%;
+            height: 550px;
+            float: right;
+        }
+        .article{
+            height: 28%;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+            color: white;
+            background-color: chocolate;
+        }
+        #grid-container{
+            margin: 15px auto;
+            width: 100%;
+        }
+        #grid-container::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .grid{
+            width: 20%;
+            height: 300px;
+            float: left;
+            margin-left: 50px;
+            background-color: orangered;
+            border-radius: 8px;
+            box-shadow: 0 5px 5px rgb(0,0,0,0.15);
+        }
+        #footer{
+            height: 100px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            background-color: plum;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="Header">Header</div>
+    
+    <div id="Banner">Banner</div>
+    <div id="circle-container">
+        <a name="hey"></a>
+        <h1 >Section-1</h1>
+    <div class="Circle"></div>
+    <div class="Circle"></div>
+    <div class="Circle"></div>
+    <div class="Circle"></div>
+</div>
+<div id="Sec-2-container">
+    <a name="helloo"></a>
+    <h1 >Section-2</h1>
+    <div id="left-side">Main Content</div>
+    <div id="right-side">
+        <div class="article" id="p1"><h2>Article-1</h2></div>
+        <div class="article" id="p2"><h2>Article-2</h2></div>
+        <div class="article" id="p3"><h2>Article-3</h2></div>
+    </div>
+</div>
+<div id="grid-container">
+    <a name="Technologies"></a>
+    <h1>Section-3</h1>
+    <div class="grid"></div>
+    <div class="grid"></div>
+    <div class="grid"></div>
+    <div class="grid"></div>
+</div>
+<div id="footer">Footer</div>
+</body>
+</html>
