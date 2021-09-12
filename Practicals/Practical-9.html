@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Layout</title>
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+       
+      
+
+       
+        html{
+            scroll-behavior: smooth;
+            scroll-padding-top: 70px;
+        }
+        #container{
+            width: 100%;
+            max-height: 1200px;
+            margin:  auto;
+        }
+
+        .show-btn,
+        .hide-btn,
+        #chk{
+            font-size: 30px;
+            display: none;
+            color: white;
+            line-height: 65px;
+        }
+        #navBar{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+        #navBar > a{
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 10px 40px;     
+            color: white;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       
+      
+        #navBar > a:hover{
+            background-color: white;
+            color: black;
+        }
+        #Header{
+            background-color: gray;
+            width:  100%;
+            height: 70px;
+            max-width: 1200;
+           position: fixed;
+           top: 0;
+           height: 70px;
+            
+            
+        }
+        
+            
+        .menu{
+            float: right;
+            list-style: none;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .menu li{
+            line-height: 70px;
+            display: inline-block;
+        }
+        .menu li a{
+            text-decoration: none;
+            display: block;
+            color: white;
+            padding: 0px 20px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .menu li a:hover{
+            color: black;
+            background-color: white;
+        }
+        .show-btn,
+      .hide-btn,
+      #chk {
+        font-size: 30px;
+        line-height: 70px;
+        color: white;
+        display: none;
+        float: right;
+        padding-right: 20px;
+      }
+
+        h1{
+            font-size: 38px;
+            text-align: center;
+            padding: 25px 0px;
+        }
+      
+        #banner{
+            width: 100%;
+            height: 680px;
+            display: flex;
+            margin-top: 90px;
+            margin-bottom: 15px;
+            font-size: 35px;
+            color: white;
+           
+        }
+        #banner {
+        background-image:url("Images/banner.jpg");
+        background-size: cover;
+        
+        background-position: center;
+      }
+
+      #banner h2 {
+        margin: 20px 20px;
+        color: white;
+      }
+
+        #Section-1{
+            font-weight: bold;
+            padding: 20px;
+            height: 60px;
+            justify-content: center;
+            display: flex;
+            font-size: 35px;
+            color: black;
+        }
+        #circle-container{
+           width: 100%;
+            margin: 15px auto;
+            align-items: center;
+            
+        }
+        #circle-container::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .Circle img{
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            background-color: goldenrod;
+            float: left;
+            margin-left: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+      
+      #sec2-container::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+        #left-side{
+            height: 500px;
+            width: 50%;
+            background-color: gray;
+           float: left;
+            color: white;
+           
+        }
+     left-p >h2{
+         margin: 10px 5px;
+         text-align: left;
+     }
+     left-p >p{
+         text-align: justify;
+         padding: 10px;
+         font-size: 22px;
+         line-height: 28px;
+     }
+        #right-side{
+            width: 48%;
+            height: 550px;
+            float: right;
+        }
+        .article{
+            height: 28%;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+            color: white;
+            background-color: chocolate;
+        }
+        #p1{
+            background-image: url("Images/Practical-1.jpg");
+            background-size: cover;
+            color: black;
+            background-repeat: no-repeat;
+        }
+        #p2{
+            background-image: url("Images/p-2.png");
+            background-size: cover;
+            color: black;
+            background-repeat: no-repeat;
+        } #p3{
+            background-image: url("Images/p-3.jpg");
+            background-size: cover;
+            color: black;
+            background-repeat: no-repeat;
+        }
+        #grid-container{
+            margin: 15px auto;
+            width: 100%;
+        }
+        #grid-container::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .grid{
+            width: 20%;
+            float: left;
+            margin-left: 50px;
+            background-color: rgb(129, 98, 98);
+            border-radius: 8px;
+            box-shadow: 0 5px 5px rgb(0,0,0,0.15);
+        }
+       .grid img{
+           width: 100%;
+           margin-bottom: 10px;
+       }
+       .grid > h4{
+           margin: 0px 10px;
+           text-align: center;
+       }
+       .grid >p{
+           margin: 10px;
+           color: white;
+           line-height: 25px;
+           text-align: justify;
+           font-size: 15px;
+       }
+       .grid >a{
+            display: block;
+            color: rgb(17, 192, 69);
+            font-family: Arial;
+            margin-top: 10px;
+            text-decoration: none;
+            text-align: center;
+            background-color: red;
+            padding:10px 20px;
+            border-radius: 20px;
+       } h1{
+            font-size: 38px;
+            text-align: center;
+            padding: 25px 0px;
+        }
+       .grid >a:hover{
+           background-color: blue;
+       }
+        #footer{
+            height: 100px;
+            background-color: plum;
+        }
+        #footer >p{
+            text-align: center;
+            padding: 20px;
+            font-size: 15px;
+            color: black;
+            
+        }
+        @media (min-width: 800px) and (max-width: 1199px){
+            .menu{
+                list-style: none;
+                float: right;
+            }
+            .menu li{
+            line-height: 70px;
+            display: inline-block;
+        }
+        .menu li a{
+            text-decoration: none;
+            display: block;
+            color: white;
+            padding: 0px 20px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .menu li a:hover{
+            color: black;
+            background-color: white;
+        }
+        html {
+        scroll-padding-top: 70px;
+        scroll-behavior: smooth;
+      }
+
+      #container {
+        width: 100%;
+      }
+
+      .show-btn,
+      .hide-btn,
+      #chk {
+        font-size: 30px;
+        line-height: 70px;
+        color: white;
+        display: none;
+        float: right;
+        padding-right: 20px;
+      }
+      #header {
+        width: 100%;
+        background-color: grey;
+        position: fixed;
+        top: 0;
+        height: 70px;
+      }
+      #banner {
+        background-image:url("Images/banner.jpg");
+        background-size: cover;
+        
+        background-position: center;
+      }
+
+      #banner h2 {
+        margin: 20px 20px;
+        color: white;
+      }
+      #circle-container{
+           width: 100%;
+            
+        }
+        #circle-container::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .Circle img{
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            background-color: goldenrod;
+            float: left;
+            margin-left: 15%;
+            font-size: 20px;
+
+        }
+      
+      #sec2-container::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+        #left-side{
+            height: 500px;
+            width: 50%;
+            background-color: gray;
+           float: left;
+            color: white;
+           
+        }
+     left-p >h2{
+         margin: 10px 5px;
+         text-align: left;
+     }
+     left-p >p{
+         text-align: justify;
+         padding: 10px;
+         font-size: 22px;
+         line-height: 28px;
+     }
+        #right-side{
+            width: 48%;
+            height: 550px;
+            float: right;
+        }
+        .article{
+            height: 28%;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+            color: white;
+            background-color: chocolate;
+        }
+        #p1{
+            background-image: url("Images/Practical-1.jpg");
+            background-size: cover;
+            color: black;
+            background-repeat: no-repeat;
+        }
+        #p2{
+            background-image: url("Images/p-2.png");
+            background-size: cover;
+            color: black;
+            background-repeat: no-repeat;
+        } #p3{
+            background-image: url("Images/p-3.jpg");
+            background-size: cover;
+            color: black;
+            background-repeat: no-repeat;
+        }
+        #grid-container{
+            margin: 15px auto;
+            width: 100%;
+        }
+        #grid-container::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .grid{
+            width: 20%;
+            float: left;
+            margin-left: 50px;
+            background-color: rgb(129, 98, 98);
+            border-radius: 8px;
+            box-shadow: 0 5px 5px rgb(0,0,0,0.15);
+        }
+       .grid img{
+           width: 100%;
+           margin-bottom: 10px;
+       }
+       .grid > h4{
+           margin: 0px 10px;
+           text-align: center;
+       }
+       .grid >p{
+           margin: 10px;
+           color: white;
+           line-height: 25px;
+           text-align: justify;
+           font-size: 15px;
+       }
+       .grid >a{
+            display: block;
+            color: rgb(17, 192, 69);
+            font-family: Arial;
+            margin-top: 10px;
+            text-decoration: none;
+            text-align: center;
+            background-color: red;
+            padding:10px 20px;
+            border-radius: 20px;
+       }
+       .grid >a:hover{
+           background-color: blue;
+       }
+        #footer{
+            height: 100px;
+            background-color: plum;
+        }
+        #footer >p{
+            text-align: center;
+            padding: 20px;
+            font-size: 15px;
+            color: black;
+            
+        }
+    }
+
+        @media (max-width: 800px) {
+        #header {
+        width: 100%;
+        background-color: grey;
+        position: fixed;
+        top: 0;
+        height: 70px;
+        }
+        .show-btn {
+        display: block;
+      }
+      menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        padding: 80px 0px;
+        line-height: normal;
+        transition: 0.7s;
+      }
+      .menu li {
+        display: block;
+      }
+
+      .manu li a {
+        display: block;
+      }
+
+      #chk:checked~.menu {
+        right: 0;
+      }
+
+      .hide-btn {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+      }
+      #banner {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 15px;
+        display: flex;
+        font-size: 30px;
+        color: white;
+        margin-top: 90px;
+      }
+
+      #banner h2 {
+        margin: 10px 20px;
+        color: #fff;
+      }
+
+      #circle-container {
+        width: 100%;
+      }
+
+      #circle-container::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+      .circle img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        float: left;
+        margin-left: 10%;
+
+        margin-bottom: 20px;
+      }
+
+      #left-side {
+        width: 100%;
+        height: 200px;
+        background-color: gray;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+
+      #left-p>h2 {
+        text-align: left;
+        margin: 5px 5px;
+      }
+
+      #left-p>p {
+        font-size: 20px;
+        padding: 10px;
+        text-align: justify;
+        line-height: 28px;
+      }
+
+      #right-side {
+        width: 100%;
+        height: 400px;
+      }
+      .artical {
+        height: 31%;
+        margin-bottom: 20px;
+        background-color: chocolate;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        overflow: hidden;
+      }
+
+      
+      #p1{
+            background-image: url("Images/Practical-1.jpg");
+            background-size: cover;
+            
+            background-repeat: no-repeat;
+        }
+        #p2{
+            background-image: url("Images/p-2.png");
+            background-size: cover;
+           
+            background-repeat: no-repeat;
+        } #p3{
+            background-image: url("Images/p-3.jpg");
+            background-size: cover;
+           
+            background-repeat: no-repeat;
+        }
+        #grid-container{
+            margin: 15px auto;
+            width: 100%;
+        }
+        #grid-container::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .grid{
+            width: 20%;
+            float: left;
+            margin-left: 50px;
+            background-color: rgb(129, 98, 98);
+            border-radius: 8px;
+            box-shadow: 0 5px 5px rgb(0,0,0,0.15);
+        }
+       .grid img{
+           width: 100%;
+           margin-bottom: 10px;
+       }
+       .grid > h4{
+           margin: 0px 10px;
+           text-align: center;
+       }
+       .grid >p{
+           margin: 10px;
+           color: white;
+           line-height: 25px;
+           text-align: justify;
+           font-size: 15px;
+       }
+            .grid >a{
+                display: block;
+            margin: 0 auto;
+            text-align: center;
+            color: #fff;
+            background-color: red;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 8px;
+       } h1{
+           color: black;
+            font-size: 38px;
+            text-align: center;
+            padding: 25px 0px;
+        }
+
+        @media (max-width: 625){
+            #container {
+          min-width: 320px;
+        }
+
+            .show-btn {
+          display: block;
+        }
+
+        menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        padding: 80px 0px;
+        line-height: normal;
+        transition: 0.7s;
+      }
+      .menu li {
+        display: block;
+      }
+
+      .manu li a {
+        display: block;
+      }
+
+      #chk:checked~.menu {
+        right: 0;
+      }
+
+      .hide-btn {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+      }
+      #banner {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 15px;
+        display: flex;
+        font-size: 30px;
+        color: white;
+        margin-top: 90px;
+      }
+
+      #banner h2 {
+        margin: 10px 20px;
+        color: #fff;
+      }
+
+      #circle-container {
+        width: 90%;
+        margin-left: 10%;
+      }
+
+      #circle-container::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+      .circle img {
+        height: 70%;
+        width: 70%;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+      #left-side {
+        width: 100%;
+        height: 200px;
+        background-color: gray;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+
+      #left-p>h2 {
+        text-align: left;
+        margin: 5px 5px;
+      }
+
+      #left-p>p {
+        font-size: 20px;
+        padding: 10px;
+        text-align: justify;
+        line-height: 28px;
+      }
+
+      #right-side {
+        width: 100%;
+        height: 400px;
+      }
+      .artical {
+        height: 31%;
+        margin-bottom: 20px;
+        background-color: chocolate;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        overflow: hidden;
+      }
+
+      
+      #p1{
+            background-image: url("Images/Practical-1.jpg");
+            background-size: cover;
+            color: black;
+            background-repeat: no-repeat;
+        }
+        #p2{
+            background-image: url("Images/p-2.png");
+            background-size: cover;
+            color: black;
+            background-repeat: no-repeat;
+        } #p3{
+            background-image: url("Images/p-3.jpg");
+            background-size: cover;
+            color: black;
+            background-repeat: no-repeat;
+        }
+        #grid-container{
+            margin: 15px auto;
+            width: 100%;
+        }
+        #grid-container::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .grid{
+            width: 40%;
+            float: left;
+            margin-left: 50px;
+            background-color: rgb(129, 98, 98);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 5px rgb(0,0,0,0.15);
+        }
+       .grid img{
+           width: 100%;
+           margin-bottom: 10px;
+       }
+       .grid > h4{
+           margin: 0px 10px;
+           text-align: center;
+       }
+       .grid >p{
+           margin: 10px;
+           color: white;
+           line-height: 25px;
+           text-align: justify;
+           font-size: 15px;
+       }
+       .grid >a{
+            display: block;
+            margin: 0 auto;
+            color: #fff
+            text-decoration: none;
+            text-align: center;
+            background-color: red;
+            padding:10px;
+            border-radius: 8px;
+       }
+       h1 {
+          color: black;
+          font-size: 20px;
+          text-align: center;
+          padding-top: 25px;
+          padding-bottom: 15px;
+        }
+
+
+
+
+        }
+    }
+
+
+    
+    </style>
+</head>
+<body>
+  <div id="container">
+      <div id="Header">
+          <input type="checkbox" id="chk"/>
+          <label for="chk" class="show-btn">
+              <i class="fa-fa-bars"></i> 
+          </label>
+          <ul class="menu">
+              <li><a href="#top">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#circle-container">Team</a></li>
+              <li><a href="#Technologies">Technologies</a></li>
+              <li><a href="#contact">contact</a></li>
+              <label for="chk" class="hide-btn">
+                  <i class="fa fa-times"></i>
+              </label>
+          </ul>
+      </div>
+  </div>
+    
+    <div id="banner"><h2>Practical-8</h2></div>
+    <div id="circle-container">
+        <h1 >Team Members</h1>
+        
+    <div class="Circle"><img src="./Images/Team-1.png" alt="" /></div>
+    <div class="Circle"><img src="./Images/Team-2.png" alt="" /></div>
+    <div class="Circle"> <img src="./Images/Team-3.png"alt="" /></div>
+    <div class="Circle"> <img src="./Images/Team-4.png" alt="" /></div>
+
+</div>
+<div id="Sec-2-container">
+    <a name="about"></a>
+    <h1 >About us</h1>
+    <div id="left-side">
+        <div class="left-content">
+            <div id="left-p"><h2>About Project</h2>
+    <p>
+        tatibus eos beatae eveniet, earum cum blanditiis, accusamus vitae, nisi voluptas dignissimos modi quibusdam aut veniam deserunt accusantium possimus atque? Distinctio voluptas nemo, fuga laboriosam perspiciatis eum debitis nesciunt quidem iure ratione! Eaque ea eum maxime temporibus dolor nostrum, iure enim, vero in atque quod animi! Mollitia alias magnam nisi suscipit ab ducimus dolores provident. Distinctio dis nesciunt quod deserunt, nostrum corporis tempore impedit veritatis ut perspiciatis rerum. Amet, harum pariatur. Quo dolorum necessitatibus eos beatae eveniet, earum cum blanditiis, accusamus vitae, nisi voluptas dignissimos modi quibusdam aut veniam deserunt accusantium possimus atque? Distinctio voluptas nemo, fuga laboriosam perspiciatis eum debitis nesciunt quidem iure ratione! Eaque ea eum maxime temporibus dolor nostrum, iure enim, vero in atque quod animi! Mollitia alias magnam nisi suscipit ab ducimus dolores provident. Distinctio veritatis quaerat explicabo fuga neque culpa facere suscipit vel, totam quasi! veritatis quaerat explicabo fuga neque culpa facere suscipit vel, totam quasi! quasi exercitationem! Repellat obcaecati quibusdam iste explicabo laborum veritatis velit accusantium animi dolorum nemo ut quam, quo cum in suscipit fugiat minima corrupti voluptates tempora alias aspernatur esse dolore iure? Libero iste quo nam sequi nulla, minima architecto est cum expedita omnis enim culpa reiciendis nesciunt quod deserunt, nostrum corporis tempore impedit veritatis ut perspiciatis rerum. Amet, harum pariatur. Quo dolorum necessitatibus eos beatae eveniet, earum cum blanditiis, accusamus vitae, nisi voluptas dignissimos modi quibusdam aut veniam deserunt accusantium possimus atque? Distinctio voluptas nemo, fuga laboriosam perspiciatis eum debitis nesciunt quidem iure ratione! Eaque ea eum maxime temporibus dolor nostrum, iure enim, vero in atque quod animi! Mollitia alias magnam nisi suscipit ab ducimus dolores provident. Distinctio veritatis quaerat explicabo fuga neque culpa facere suscipit vel, totam quasi!
+    </p></div></div>
+
+</div>
+    <div id="right-side">
+        <div class="article" id="p1"><h2>Practical-1</h2></div>
+        <div class="article" id="p2"><h2>Practical-2</h2></div>
+        <div class="article" id="p3"><h2>Practical-3</h2></div>
+    </div>
+</div>
+<div id="grid-container">
+    <a name="Technologies"></a>
+    <h1 >Technologies Used
+    </h1>
+    <div class="grid">
+        <img src="./Images/html.png">
+        <h4>Introduction to HTML</h4>
+        <p>
+            HTML stands for Hypertext Markup Language, and it is the most widely
+        used language to 
+        </p>
+        <a href="./Practical-5-html.html">Read More</a>
+    </div>
+    <div class="grid">
+        <img src="./Images/css.png">
+        <h4>Introduction to CSS</h4>
+        <p>
+            
+        Cascading Style Sheets, fondly referred to as CSS, is a simply designed
+        language intended to
+        </p>
+        <a href="./Practical-5-css.html">Read More</a>
+    </div>
+    <div class="grid">
+        <img src="./Images/js-2.png">
+        <h4>Introduction to JavaScript</h4>
+        <p>
+            JavaScript is a scripting  language that allows you to implement
+         complex features on web pages — 
+        </p>
+        <a href="./Practical-5-js.html">Read More</a>
+    </div>
+    <div class="grid">
+        <img src="./Images/bootstrap.jpg">
+        <h4>Introduction to BootStrap</h4>
+        <p>
+            Bootstrap is a free and open-source tool collection for creating responsive
+         websites and web 
+        </p>
+        <a href="./Practical-5-boot.html">Read More</a>
+    </div>
+</div>
+<a name="contact"></a>
+<h1>Contact</h1>
+<div id="footer" >
+    <p>Website Template for Practical-8</br>
+        <a href="#top">Back to Top</a>
+</div>
+</body>
+</html>
