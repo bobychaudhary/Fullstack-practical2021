@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./Practical-12.css" />
+  </head>
+  <body>
+    <header><h1>FORM TEMPLATE</h1></header>
+    <form action="index.php" method="POST"></form>
+    <div class="main-container">
+      <div class="form-template-1">
+        <div class="form-header-1">
+          <h1>LOGIN</h1>
+          <div class="social">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-google"></i>
+          </div>
+        </div>
+        <div class="form-container-1">
+          <div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter Password"
+            />
+          </div>
+          <p>Forgot <b> Password?</b></p>
+          <input type="submit" value="LOGIN" />
+          <p id="p2">Don't have account? <b>Sign Up</b></p>
+        </div>
+      </div>
+
+      <div class="form-template-2">
+        <div class="form-header-2">
+          <h1>SIGN UP</h1>
+        </div>
+        <div class="form-container-2">
+          <div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter Password"
+            />
+          </div>
+          <div>
+            <label for="checkbox"> </label>
+            <input type="checkbox" name="checkbox" value="checkbox" /> Accept
+            the
+            <span style="color: blue">Terms and Conditions</span>
+          </div>
+          <input type="submit" value="SIGN UP" />
+          <p>Have an account? <b style="color: blue">Sign in</b></p>
+          <div class="social">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-google"></i>
+          </div>
+        </div>
+      </div>
+      <div class="form-template-3">
+        <div class="form-header-3">
+          <h1>SIGN IN</h1>
+        </div>
+        <div class="form-container-3">
+          <div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+            />
+            <br />
+            <div>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter Password"
+              />
+            </div>
+          </div>
+
+          <p style="color: blue">Forgot Password?</p>
+          <input type="submit" value="SIGN IN" /><br />
+          <p>Or Sign in with</p>
+        </div>
+        <div class="social">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-google"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

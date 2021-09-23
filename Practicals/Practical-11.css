@@ -1,0 +1,414 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-content {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: grey;
+}
+footer {
+  width: 100%;
+  background-color: #26272b;
+}
+.sec-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 10px;
+}
+.about {
+  width: 40%;
+}
+.sec-1 h2 {
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+}
+.about p {
+  text-align: justify;
+  color: grey;
+  line-height: 24px;
+  margin-top: 10px;
+}
+.sec-1 ul {
+  list-style: none;
+}
+.sec-1 ul li {
+  padding: 5px;
+}
+a {
+  text-decoration: none;
+  color: gray;
+}
+a:hover {
+  color: orange;
+}
+span {
+  color: grey;
+}
+i {
+  color: grey;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.sec-2 {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+  align-items: center;
+}
+.sec-2 p {
+  color: gray;
+  font-size: 24px;
+  padding: 0;
+}
+.sec-2 a {
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: red;
+  margin-left: 10px;
+  border-radius: 20px;
+  font-size: 22px;
+}
+.sec-2 a:hover {
+  background-color: orange;
+}
+.sec-3 {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+}
+.sec-3 ul {
+  list-style: none;
+}
+.sec-3 ul li {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+  background-color: #424242;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.sec-3 ul li i {
+  color: white;
+  font-size: 24px;
+  line-height: 20px;
+  text-align: center;
+}
+.sec-3 ul li:nth-child(1):hover {
+  background-color: #3b5999;
+}
+.sec-3 ul li:nth-child(2):hover {
+  background-color: #55acee;
+}
+.sec-3 ul li:nth-child(3):hover {
+  background-color: #dd4b39;
+}
+.sec-3 ul li:nth-child(4):hover {
+  background-color: #0077b5;
+}
+.sec-3 ul li:nth-child(5):hover {
+  background-color: #ea4c89;
+}
+.sec-4 {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  padding: 30px;
+}
+.sec-4 p {
+  color: grey;
+  position: relative;
+}
+
+.sec-4 p::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: yellow;
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  transition: all 0.3s;
+}
+.sec-4 p:hover::after {
+  width: 100%;
+}
+
+hr {
+  opacity: 0.2;
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: grey;
+  }
+  footer {
+    width: 100%;
+    background-color: #26272b;
+  }
+  .sec-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10px;
+  }
+  .about {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .sec-1 h2 {
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+  }
+  .about p {
+    text-align: justify;
+    color: grey;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+  .sec-1 ul {
+    list-style: none;
+  }
+  .sec-1 ul li {
+    padding: 5px;
+  }
+  a {
+    text-decoration: none;
+    color: gray;
+  }
+  a:hover {
+    color: orange;
+  }
+  span {
+    color: grey;
+  }
+  i {
+    color: grey;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .sec-2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+  }
+  .sec-2 p {
+    color: gray;
+    font-size: 24px;
+    padding: 0;
+  }
+  .sec-2 a {
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    background-color: red;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-size: 22px;
+  }
+  .sec-2 a:hover {
+    background-color: orange;
+  }
+  .sec-3 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .sec-3 ul {
+    margin: 20px;
+  }
+  .sec-3 ul li {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    background-color: #424242;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .sec-3 ul li i {
+    color: white;
+    font-size: 24px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .sec-4 {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    padding: 30px;
+  }
+  .sec-4 p {
+    color: grey;
+    position: relative;
+  }
+
+  .sec-4 p::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    transition: all 0.5s;
+  }
+  .sec-4 p:hover::after {
+    width: 100%;
+  }
+  hr {
+    opacity: 0.2;
+  }
+}
+
+@media (max-width: 499px) {
+  .main-content {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: grey;
+  }
+  footer {
+    width: 100%;
+    background-color: #26272b;
+  }
+  .sec-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 10px;
+  }
+  .about {
+    width: 100%;
+  }
+  .sec-1 h2 {
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+  .about p {
+    text-align: justify;
+    color: grey;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+  .sec-1 ul {
+    list-style: none;
+  }
+  .sec-1 ul li {
+    padding: 5px;
+  }
+  a {
+    text-decoration: none;
+    color: gray;
+  }
+  a:hover {
+    color: orange;
+  }
+  span {
+    color: grey;
+  }
+  i {
+    color: grey;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .sec-2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+  }
+  .sec-2 p {
+    color: gray;
+    font-size: 24px;
+    padding: 0;
+  }
+  .sec-2 a {
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    background-color: red;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-size: 22px;
+  }
+  .sec-2 a:hover {
+    background-color: orange;
+  }
+  .sec-3 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .sec-3 ul {
+    list-style: none;
+  }
+  .sec-3 ul li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: #424242;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .sec-3 ul li i {
+    color: white;
+    font-size: 24px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .sec-4 {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    padding: 30px;
+  }
+  .sec-4 p {
+    color: grey;
+    position: relative;
+  }
+
+  .sec-4 p::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    transition: all 0.3s;
+  }
+  .sec-4 p:hover::after {
+    width: 100%;
+  }
+}

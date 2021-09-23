@@ -41,10 +41,12 @@
     
 }
 .sidebar{
-    width: 20px;
+    width: 20%;
     height: 100%;
     position: fixed;
-    top: 70;
+    
+    background-color: #353b48;
+    top: 10;
     border-color: #353b48;
 }
 .sidebar ul{
