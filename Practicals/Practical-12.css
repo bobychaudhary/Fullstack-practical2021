@@ -77,7 +77,7 @@ input[type="submit"] {
   background-color: grey;
   border: none;
   outline: none;
-  border-radius: 22px;
+  border-radius: 19px;
   padding: 10px 20px;
   margin-top: 28px;
   color: white;
@@ -106,10 +106,101 @@ input[type="submit"] {
 }
 
 .form-container-2 {
+  /* to add padding in email and password container*/
   padding: 20px;
 }
-
 input[type="checkbox"] {
   margin: 20px 0px;
 }
-.form-template-2;
+.form-template-3 {
+  background-color: #fff;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.form-header-3 h1 {
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+.form-container-3 input[type="email"] {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid grey;
+  padding: 10px 0px;
+  width: 100%;
+}
+.form-container-3 input[type="password"] {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid grey;
+  padding: 10px 0px;
+  width: 100%;
+}
+.form-container-2 input[type="checkbox"] {
+  margin: 20px 0;
+}
+.form-container-2 p#p3 {
+  display: flex;
+  margin-left: 20px;
+}
+.form-container-2 input[type="submit"] {
+  background-color: deeppink;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 25px;
+}
+
+.form-footer-2 {
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+  height: 77px;
+  align-items: center;
+}
+.form-footer-2 .social i {
+  font-size: 20px;
+  margin: 10px;
+  color: white;
+}
+
+/*Container-3*/
+
+.form-container-3 {
+  padding: 20px;
+}
+.form-container-3 p {
+  text-align: right;
+  font-size: 13px;
+  margin-top: 15px;
+}
+.form-container-3 p#p4 {
+  color: black;
+  text-align: center;
+  margin-top: -5px;
+}
+.form-container-3 input[type="submit"] {
+  color: white;
+  width: 100%;
+  background: linear-gradient(to right, white, blue);
+  display: flex;
+  justify-content: center;
+}
+.form-footer-3 .social {
+  display: flex;
+  justify-content: center;
+}
+.form-footer-3 .social i {
+  padding: 10px 0px;
+  box-shadow: 2px 2px 5px blue;
+  color: #3498db;
+  width: 70px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+}
