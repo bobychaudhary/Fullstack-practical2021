@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataPlan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        min-width: 100%;
+        background-color: lightgrey;
+      }
+      .wrapper {
+        width: 600px;
+        background-color: #fff;
+        padding: 10px;
+        margin: 20px auto;
+      }
+      .custom-table{
+        width: 100%;
+        margin: 0 auto;
+        border-collapse: collapse;
+      }
+      .basic{
+        background-color: #c1dcb7;
+      }
+      .plus{
+        background-color: #bad6c8;
+      }
+      .deluxe{
+        background-color: #bbd3dc;
+      }
+      .pro{
+        background-color: #d5e4bc;
+      }
+      .custom-table td, .custom-table th{
+        width: 150px;
+        padding: 8px 5px;
+        text-align: center;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+      }
+      .custom-table th{
+        height: 70px;
+        color: #64548f;
+        font-size: 28px;
+      }
+      i{
+                font-size: 28px;
+                color: #64548f;
+                margin-right: 10px;
+
+      }
+      tbody tr:nth-child(odd),
+      tfoot tr:nth-child(odd){
+        background-color: #edf3e2;
+      }
+      tfoot tr{
+        line-height: 70px;
+      }
+      a{
+        text-decoration: none;
+        background-color: #64548f;
+        padding: 15px 25px;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;
+        vertical-align: middle;
+      }
+      a:hover{
+        background-color: red;
+      }
+      h2{
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      tbody tr:first-child td{
+        font-size: 20px;
+        color: green;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Select Your Plan</h2>
+        <table class="custom-table">
+          <colgroup class="basic"></colgroup>
+          <colgroup class="plus"></colgroup>
+          <colgroup class="deluxe"></colgroup>
+          <colgroup class="pro"></colgroup>
+
+          <thead>
+            <tr>
+              <th><i class="fa fa-building"></i> Basic</th>
+              <th><i class="fa fa-superpowers"></i>Plus</th>
+              <th><i class="fa fa-telegram"></i>Deluxe</th>
+              <th><i class="fa fa-tachometer"></i>Pro</th>
+            </tr>
+            </thead>
+            <tr>
+              <td>Rs 500/-</td>
+              <td>Rs 1500/-</td>
+              <td>Rs 2500/-</td>
+              <td>Rs 3500/-</td>
+            </tr>
+            <tr>
+              <td>50 Pages</td>
+              <td>70 Pages</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>3 users</td>
+              <td>5 users</td>
+              <td>10 users</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>10 Sites</td>
+              <td>25 Sites</td>
+              <td>100 Sites</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>50 MB</td>
+              <td>250 MB</td>
+              <td>1 GB</td>
+              <td>5 GB</td>
+            </tr>
+            <tr>
+              <td>included</td>
+              <td>included</td>
+              <td>included</td>
+              <td>included</td>
+            </tr>
+            <tr>
+              <td><img src="./Images/correct_logo.png" alt="" width="30px" /></td>
+              <td><img src="./Images/correct_logo.png" alt=""  width="30px" /></td>
+              <td><img src="./Images/correct_logo.png" alt=""  width="30px" /></td>
+              <td><img src="./Images/correct_logo.png" alt=""  width="30px" /></td>
+            </tr>
+            <tr>
+              <td><img src="./Images/wrong-logo.png" alt="" width="30px"  /></td>
+              <td><img src="./Images/correct_logo.png" alt=""  width="30px" /></td>
+              <td><img src="./Images/correct_logo.png" alt=""  width="30px" /></td>
+              <td><img src="./Images/correct_logo.png" alt="" width="30px"  /></td>
+            </tr>
+            <tr>
+              <td><img src="./Images/wrong-logo.png" alt=""  width="30px" /></td>
+              <td><img src="./Images/correct_logo.png" alt=""  width="30px" /></td>
+              <td><img src="./Images/correct_logo.png" alt=""  width="30px" /></td>
+              <td><img src="./Images/correct_logo.png" alt=""  width="30px" /></td>
+            </tr>
+            <tr>
+              <td><img src="./Images/wrong-logo.png" alt=""  width="30px" /></td>
+              <td><img src="./Images/wrong-logo.png" alt=""  width="30px" /></td>
+              <td><img src="./Images/correct_logo.png" alt=""  width="30px" /></td>
+              <td><img src="./Images/correct_logo.png" alt=""  width="30px" /></td>
+            </tr>
+            <tr>
+              <td><img src="./Images/wrong-logo.png" alt=""  width="30px" /></td>
+              <td><img src="./Images/wrong-logo.png" alt=""  width="30px" /></td>
+              <td><img src="./Images/wrong-logo.png" alt=""  width="30px" /></td>
+              <td><img src="./Images/correct_logo.png" alt=""  width="30px" /></td>
+            </tr>
+            <tfoot>
+              <tr>
+                <td><a href="#">Sign Up</a></td>
+                <td><a href="#">Sign Up</a></td>
+                <td><a href="#">Sign Up</a></td>
+                <td><a href="#">Sign Up</a></td>
+
+              </tr>
+            </tfoot>
+          
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
