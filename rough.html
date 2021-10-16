@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <!-- CSS styling -->
+    <style type="text/css">
+      #page {
+        max-width: 400px;
+        margin: 20px auto 20px auto;
+        border: 3px solid aqua;
+      }
+      h1,
+      h2,
+      ul {
+        padding: auto;
+      }
+      p {
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <h1 id="header">TO DO LIST</h1>
+      <ul>
+        <h2>Beta-Labs JavaScript Tutorial</h2>
+        <li id="one" class="mandatory">Learning the concepts</li>
+        <li id="two" class="mandatory">Practicing the codes</li>
+        <li id="three">Taking quizzes</li>
+        <li id="four">Solving Interview Questions</li>
+      </ul>
+      <!-- JavaScript code -->
+      <script>
+        var lista = document.querySelectorAll("li.mandatory");
+        lista[0].style.backgroundColor = "orange";
+        lista[1].style.backgroundColor = "pink";
+        var listb = document.querySelectorAll("li");
+        listb[2].style.backgroundColor = "brown";
+      </script>
+    </div>
+  </body>
+</html>
