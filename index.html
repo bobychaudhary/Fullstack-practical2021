@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practical-14</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Counter</h1>
-      <div class="box">
-        <button class="btn" onclick="sub()">-</button>
-        <h3 id="h">1</h3>
-        <button class="btn" onclick="add()">+</button>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical - 15</title>
+    <style>
+        body {
+            font-size: 2rem;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+        }
+        h1 {
+            text-align: center;
+        }
+        .main {
+            margin-left: 42%;
+        }
+        button {
+            margin: 20px;
+            height: 50px;
+            width: 50px;
+            background: yellow;
+            font-size: 2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+    <div class="main">
+        <button id="b1" onclick="decrement()"> - </button>
+        <span id="value">0</span>
+        <button id="b2" onclick="increment()"> + </button>
     </div>
-  </body>
-  <script src="./script.js "></script>
+</body>
+<script src="./counter.js"></script>
 </html>
