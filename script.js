@@ -1,14 +1,14 @@
-var x = document.getElementById("h");
-function sub() {
-  var val = x.innerHTML;
-  if (val - 1 >= 0) {
-    x.innerHTML = val - 1;
-  } else {
-    x.disabled = true;
-  }
+var a = document.getElementById("value");
+if (parseInt(a.innerText) == 0) {
+  document.getElementById("b1").disabled = true;
 }
-function add() {
-  var val = x.innerHTML;
-
-  x.innerHTML = parseInt(val) + 1;
+function increment() {
+  if (parseInt(a.innerText) != 0)
+    document.getElementById("b1").disabled = false;
+  a.innerText = parseInt(a.innerText) + 1;
+}
+function decrement() {
+    if (parseInt(a.innerText) <= 1)
+      document.getElementById("b1").disabled = true;
+  a.innerText = parseInt(a.innerText) - 1;
 }
