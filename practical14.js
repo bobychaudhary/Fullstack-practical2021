@@ -9,3 +9,4 @@ function addition() {
   var value = x.innerHTML;
   x.innerText = parseInt(value) + 1;
 }
+//
