@@ -1,44 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical - 15</title>
-    <style>
-        body {
-            font-size: 2rem;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: gray;
-        }
-        h1 {
-            text-align: center;
-        }
-        .main {
-            margin-left: 42%;
-        }
-        button {
-            margin: 20px;
-            height: 50px;
-            width: 50px;
-            background: yellow;
-            font-size: 2rem;
-            font-weight: bold;
-            border: none;
-            border-radius: 10px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Counter</h1>
-    <div class="main">
-        <button id="b1" onclick="decrement()"> - </button>
-        <span id="value">0</span>
-        <button id="b2" onclick="increment()"> + </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <link rel="stylesheet" href="./Practicals/Style.css" />
+  <script src="./loader.js"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    h1 {
+      text-align: center;
+      padding: 5px;
+      color: orange;
+      text-transform: uppercase;
+    }
+    table {
+      text-align: left;
+      line-height: 20px;
+      margin: 20px auto;
+      border-radius: 5px;
+      width: 80%;
+      border-spacing: 0;
+      border-collapse: separate;
+      border: 2px orange;
+    }
+    th {
+      text-transform: uppercase;
+      font-size: 25px;
+    }
+    td {
+      font-size: 20px;
+    }
+    th,
+    td {
+      padding: 15px;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: #edf3e2;
+    }
+    #pno {
+      text-decoration: none;
+    }
+    #pno:hover {
+      color: red;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .footer {
+      display: flex;
+      justify-content: center;
+      padding: 20px 10px;
+    }
+    .footer li {
+      padding-right: 30px;
+      list-style: none;
+      margin-right: 60px;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: inline-block;
+      font-size: 50px;
+    }
+    a:hover {
+      background-color: rgb(172, 132, 58);
+    }
+  </style>
+  <body>
+    <div style="text-align: center">
+      <img src="./Practicals/Images/index.jpg" width="500" height="500" />
     </div>
-</body>
-<script src="./counter.js"></script>
+    <table class="alter">
+      <h1><u>List of Practicals</u></h1>
+      <tr>
+        <th>S.No</th>
+        <th>Practical Name</th>
+        <th>Practical Number</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>
+          Create a Web page including HTML basic skeleton using Offline HTML
+          Editor and Online Sandbox Environment.
+        </td>
+        <td>
+          <a href="./Practicals/Practical-1.html" id="pno"> Practical-1</a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>
+          Create a web page showing output as Html Structure using character
+          Entities and span Tag.
+        </td>
+        <td>
+          <a href="./Practicals/Practical-2.html " id="pno"> Practical-2</a>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Live your First Web-Page on Git-Hub</td>
+        <td>
+          <a href="./Practicals/Practical-3.html" id="pno">Practical-3</a>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>
+          Create a website having list of all practical and their individual
+          practical Page links.
+        </td>
+        <td>
+          <a href="./Practicals/Practical-4.html" id="pno">Practical-4</a>
+        </td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>
+          Create a Web-Page showing the use of Image-Map in the Web Application.
+        </td>
+        <td><a href="./Practicals/P-5.html" id="pno"> Practical-5</a></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Create a Card Layout using CSS layout properties.</td>
+        <td>
+          <a href="./Practicals/Practical-6.html" id="pno"> Practical-6</a>
+        </td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Create a Web Page Layout using div tags.</td>
+        <td>
+          <a href="./Practicals/Practical-7.html" id="pno">Practical-7</a>
+        </td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Create a Web Page having Fixed Navigation Bar with content.</td>
+        <td><a href="./Practical-8.html" id="pno"> Practical-8</a></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Create a Responsive Web Layout with Responsive Navigation Bar.</td>
+        <td>
+          <a href="./Practicals/Practical-9.html" id="pno"> Practical-9</a>
+        </td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Create a Responsive Side-Bar Navigation Menu.</td>
+        <td>
+          <a href="./Practicals/Practical-10.html" id="pno"> Practical-10 </a>
+        </td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>Create a Responsive Footer Template.</td>
+        <td>
+          <a href="./Practicals/Practical-11.html" id="pno"> Practical-11</a>
+        </td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Create a Table that represent Live Practical Book Records .</td>
+        <td>
+          <a href="./Practicals/Practical--12.html" id="pno"> Practical-12</a>
+        </td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>Create a Custom Price Table Template.</td>
+        <td>
+          <a href="./Practicals/Practical-13.html" id="pno"> Practical-13</a>
+        </td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>
+          Create a Counter Page using JavaScript as per the attached Templates.
+        </td>
+        <td><a href="./Practicals/practical14.html" id="pno"> Practical 14</a></td>
+        <tr>
+
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+      </tr>
+    </table>
+    <div class="footer">
+      <ul id="social">
+        <li>
+          <a
+            href="https://twitter.com/Bobychaudhary_?t=JXSbCa4Iqvv143SWjminCw&s=09"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/boby-chaudhary-a53648167"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/bobychaudhary"
+            ><i class="fa fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://leetcode.com/boby708/"><i class="fa fa-code"></i></a>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
