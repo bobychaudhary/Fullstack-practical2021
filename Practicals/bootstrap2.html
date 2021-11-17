@@ -14,50 +14,38 @@
   </head>
   <style>
     .content {
+    }
+    .col {
+      background-color: grey;
+      margin-right: 5px;
+      margin-top: 5px;
+      height: 100px;
+    }
+    .col-1 {
       height: 100px;
       background-color: grey;
-      margin-bottom: 10px;
-    }
-    .content2 {
-      height: 150px;
-      background-color: rgb(76, 76, 160);
-      margin-bottom: 10px;
-    }
-    .content3 {
-      height: 150px;
-      margin-bottom: 10px;
-    }
-    .content4 {
-      height: 150px;
-      margin-bottom: 10px;
-      background-color: black;
     }
 
-    .inner-1 {
-      width: 100px;
+    .col-2 {
+      height: 100px;
       background-color: grey;
-    }
-    .inner-2 {
-      width: 100%;
-      background-color: blue;
-    }
-    .inner-3 {
-      width: 100%;
-      background-color: green;
+      margin-left: 5px;
     }
   </style>
+
   <body>
     <div class="container-fluid">
-      <div class="row content"></div>
-      <div class="row content2"></div>
-      <div class="row content3">
-        <div class="col inner-1"></div>
-        <div class="col inner-2"></div>
-        <div class="col inner-3"></div>
+      <div class="row content">
+        <div class="col-1 col-md-3 inner-1">1</div>
+        <div class="col-2 col-md-3 inner-2">2</div>
       </div>
-      <div class="row content4"></div>
+      <div class="row content2">
+        <div class="col inner-3">3</div>
+        <div class="col inner-4">4</div>
+        <div class="col inner-5">5</div>
+        <div class="col inner-6">6</div>
+      </div>
     </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
