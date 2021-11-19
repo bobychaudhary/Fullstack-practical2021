@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="./Practical-15.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter Username">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email ID </label>
+                <input type="text" id="email" placeholder="Enter Email Id">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password1">Password</label>
+                <input type="password" id="password1" placeholder="Enter Password">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password2">Re-Enter Password</label>
+                <input type="password" id="password2" placeholder="Enter Password Again">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+<script src="./Practical-15.js"></script>    
+</body>
+</html>
