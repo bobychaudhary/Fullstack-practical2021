@@ -1,2 +1,2 @@
-# Fullstack-practical2021.html
-This is repo for Fullstack practicals
+# Fullstack-practical2021 Semester-V
+This repo is for Fullstack practical's
